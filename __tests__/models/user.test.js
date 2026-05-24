@@ -1,5 +1,4 @@
 require("../test-setup");
-const { describe, it, expect } = require("vitest");
 const User = require("../../src/models/User");
 
 describe("User Model", () => {
