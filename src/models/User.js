@@ -21,7 +21,6 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// CASCADE delete accommodations when a user is deleted
 userSchema.post("findOneAndDelete", async function (doc) {
   if (doc) {
     const Accommodation = require("./Accommodation");
